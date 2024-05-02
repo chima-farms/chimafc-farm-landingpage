@@ -112,9 +112,28 @@
     }
 }
 
-.hero-header {
-    background: url(../img/testimonial.jpg) top right no-repeat;
+/* .hero-header {
+    background: url(../img/testimonial.jpg) bottom right no-repeat;
     background-size: cover;
+} */
+
+.hero-header {
+  position: relative;
+}
+
+.hero-header:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background: url(../img/testimonial.jpg) bottom right no-repeat;
+  background-size: cover;
+}
+
+.hero-content {
+  position: relative;
 }
 
 .img_logo {
